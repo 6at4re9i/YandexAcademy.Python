@@ -1,0 +1,6 @@
+number = int(input())
+a = int(number / 1000)
+b = int(int(number / 100) - a * 10)
+c = int(int(number / 10 - a * 100 - b * 10))
+d = int(int(number - a * 1000 - b * 100 - c * 10))
+print(f"{b}{a}{d}{c}")
